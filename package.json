@@ -8,7 +8,8 @@
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
-    "cdk": "cdk"
+    "cdk": "cdk",
+    "compile": "tsc"
   },
   "devDependencies": {
     "aws-cdk": "1.67.0",
@@ -24,6 +25,11 @@
     "@aws-cdk/aws-sns": "1.67.0",
     "@aws-cdk/aws-sns-subscriptions": "1.67.0",
     "@aws-cdk/aws-sqs": "1.67.0",
-    "@aws-cdk/core": "1.67.0"
+    "@aws-cdk/core": "1.67.0",
+    "@aws-cdk/aws-lambda": "1.67.0",
+    "aws-sdk": "^2.655.0",
+    "@types/aws-lambda": "^8.10.51",
+    "@types/node": "^13.13.5",
+    "typescript": "^3.8.3"
   }
 }

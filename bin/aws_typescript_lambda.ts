@@ -1,6 +1,8 @@
 #!/usr/bin/env node
-import * as cdk from '@aws-cdk/core';
-import { AwsTypescriptLambdaStack } from '../lib/aws_typescript_lambda-stack';
+import * as cdk from "@aws-cdk/core";
+import { AwsTypescriptLambdaStack } from "../lib/aws_typescript_lambda-stack";
+
+const env = { account: "246230896069", region: "us-east-1" };
 
 const app = new cdk.App();
-new AwsTypescriptLambdaStack(app, 'AwsTypescriptLambdaStack');
+new AwsTypescriptLambdaStack(app, "AwsTypescriptLambdaStack", { env });
